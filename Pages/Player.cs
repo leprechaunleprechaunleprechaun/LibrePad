@@ -379,6 +379,8 @@ Creation Date");
                 return "Steam";
             else if (concatStringOfCosmeticsAllowed.Contains("FIRST LOGIN") || rig.Creator.GetPlayerRef().CustomProperties.Count >= 2)
                 return "PC";
+            else if (concatStringOfCosmeticsAllowed.Contains("game-purchase"))
+                return "OWNS META PC";
 
             return "Standalone";
         }
